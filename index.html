@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafiz Chicken Tikka Biryani POS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="pos-container">
+        <h1>Hafiz Chicken Tikka Biryani</h1>
+
+        <div class="bill-info">
+            <span id="billDate"></span>
+            <span id="billNumber"></span>
+        </div>
+
+        <div class="menu-items">
+            <button class="menu-btn" data-item="Chicken Tikka Biryani" data-rate="480" data-unit="kg">
+                Biryani (Rs. 480/Kg)
+            </button>
+            <button class="menu-btn" data-item="Raita" data-rate="60" data-unit="unit">
+                Raita (Rs. 60)
+            </button>
+            <button class="menu-btn" data-item="Salad" data-rate="60" data-unit="unit">
+                Salad (Rs. 60)
+            </button>
+        </div>
+
+        <div class="bill-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Item Name</th>
+                        <th>Unit/Weight</th>
+                        <th>Qty</th>
+                    </tr>
+                </thead>
+                <tbody id="billBody">
+                    </tbody>
+            </table>
+        </div>
+
+        <div class="totals">
+            <h3>Grand Total: <span id="grandTotal">Rs. 0</span></h3>
+        </div>
+
+        <div class="actions">
+            <button id="saveBtn">Save Bill</button>
+            <button id="whatsappBtn">Send to WhatsApp</button>
+            <button id="printBtn">Print</button>
+            <button id="newBillBtn">New Bill</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
